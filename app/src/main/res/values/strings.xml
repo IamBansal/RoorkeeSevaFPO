@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Roorkee Seva FPO</string>
+    <string-array name="items">
+        <item>Vegetables</item>
+        <item>Grains</item>
+        <item>Fruits</item>
+        <item>Pulses</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_file"
+    app:startDestination="@id/fpoFragment">
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.roorkeesevafpo.fragments.buyer.CartFragment"
+        android:label="CartFragment" />
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.roorkeesevafpo.fragments.buyer.ListFragment"
+        android:label="ListFragment"  >
+        <action
+            android:id="@+id/action_listFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fpoFragment"
+        android:name="com.example.roorkeesevafpo.fragments.buyer.FPOFragment"
+        android:label="FPOFragment" >
+        <action
+            android:id="@+id/action_fpoFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+        <action
+            android:id="@+id/action_fpoFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.roorkeesevafpo.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+
+</navigation>

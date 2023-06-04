@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/seller_nav_file"
+    app:startDestination="@id/FPOSellerFragment">
+
+    <fragment
+        android:id="@+id/FPOSellerFragment"
+        android:name="com.example.roorkeesevafpo.fragments.seller.FPOSellerFragment"
+        android:label="FPOSellerFragment" >
+        <action
+            android:id="@+id/action_FPOSellerFragment_to_listOneFragment"
+            app:destination="@id/listOneFragment" />
+        <action
+            android:id="@+id/action_FPOSellerFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listOneFragment"
+        android:name="com.example.roorkeesevafpo.fragments.seller.ListOneFragment"
+        android:label="ListOneFragment" >
+        <action
+            android:id="@+id/action_listOneFragment_to_listTwoFragment"
+            app:destination="@id/listTwoFragment" />
+        <action
+            android:id="@+id/action_listOneFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listTwoFragment"
+        android:name="com.example.roorkeesevafpo.fragments.seller.ListTwoFragment"
+        android:label="fragment_list_two"
+        tools:layout="@layout/fragment_list_two" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.roorkeesevafpo.fragments.seller.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.roorkeesevafpo.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+</navigation>

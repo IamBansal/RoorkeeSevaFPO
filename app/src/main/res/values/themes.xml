@@ -1,0 +1,221 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.RoorkeeSevaFPO" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- Customize your theme here. -->
+        <item name="fontFamily">@font/open_sans_regular</item>
+        <item name="android:checkboxStyle">@style/styleCheckBox</item>
+        <item name="checkboxStyle">@style/styleCheckBox</item>
+
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+<!--        <item name="android:editTextStyle">@style/styleEditText</item>-->
+<!--        <item name="editTextStyle">@style/styleEditText</item>-->
+<!--        <item name="buttonStyle">@style/styleButton</item>-->
+    </style>
+    <style name="roundedImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+<!--    <style name="styleButton" parent="@android:style/Widget.Button">-->
+<!--        <item name="android:background">@drawable/theme_btn_bg</item>-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">@dimen/margin_54</item>-->
+<!--        <item name="android:textColor">@color/white</item>-->
+<!--        <item name="android:minHeight">@dimen/margin_54</item>-->
+<!--        <item name="android:paddingTop">@dimen/margin_4</item>-->
+<!--        <item name="android:paddingBottom">@dimen/margin_4</item>-->
+<!--        <item name="android:paddingLeft">@dimen/margin_8</item>-->
+<!--        <item name="android:paddingRight">@dimen/margin_8</item>-->
+<!--        <item name="android:textSize">@dimen/font_16</item>-->
+<!--        <item name="android:textAllCaps">false</item>-->
+<!--        <item name="android:letterSpacing">0</item>-->
+<!--        <item name="android:fontFamily">@font/calibri_regular</item>-->
+<!--        <item name="android:enabled">true</item>-->
+<!--    </style>-->
+
+<!--    <style name="MyCheckBoxStyle" parent="Base.Widget.AppCompat.CompoundButton.CheckBox">-->
+<!--        <item name="android:textColor">@color/blackColor</item>-->
+<!--        <item name="android:textSize">@dimen/font_12</item>-->
+<!--        <item name="android:textStyle">normal</item>-->
+<!--        <item name="android:lineSpacingExtra">6sp</item>-->
+<!--        <item name="android:paddingStart">@dimen/margin_10</item>-->
+<!--        <item name="android:fontFamily">@font/calibri_regular</item>-->
+<!--        <item name="android:button">@drawable/checkbox_selector</item>-->
+<!--    </style>-->
+
+    <style name="styleFont14" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/calibri_regular</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingBottom">@dimen/margin_1</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="lineHeight">@dimen/margin_24</item>
+    </style>
+
+    <style name="styleFont16" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/font_16</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/calibri_regular</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:paddingBottom">@dimen/margin_1</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="lineHeight">@dimen/margin_24</item>
+    </style>
+
+    <style name="styleFont18" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/font_18</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/calibri_regular</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:paddingBottom">@dimen/margin_1</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="lineHeight">@dimen/margin_24</item>
+    </style>
+
+    <style name="styleFont20" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/font_20</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/calibri_regular</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingBottom">@dimen/margin_1</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="lineHeight">@dimen/margin_24</item>
+    </style>
+
+    <!-- Default Alert dialog theme -->
+    <style name="LightDialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+    </style>
+
+    <!-- Search view theme -->
+    <style name="AppSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/open_sans_regular</item>
+        <item name="android:textColorHint">@color/search_hint_color</item>
+    </style>
+
+    <!-- Progress Dialog theme -->
+    <style name="AppTheme.ProgressBarDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!-- Custom Alert dialog theme start-->
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="styleCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textColor">@color/lightBlack</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/font_14</item>
+
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
+    </style>
+
+    <!-- EditText style -->
+<!--    <style name="styleEditText" parent="@android:style/Widget.EditText">-->
+<!--        <item name="android:background">@drawable/round_edittext</item>-->
+<!--        <item name="android:textColor">@color/editTextColor</item>-->
+<!--        <item name="android:textColorHint">@color/hintColor</item>-->
+<!--        <item name="android:singleLine">true</item>-->
+<!--        <item name="android:maxLines">1</item>-->
+<!--        <item name="android:paddingStart">@dimen/margin_20</item>-->
+<!--        <item name="android:paddingEnd">@dimen/margin_20</item>-->
+<!--        <item name="android:minHeight">@dimen/et_height</item>-->
+<!--        <item name="android:textSize">@dimen/font_14</item>-->
+<!--        <item name="android:inputType">textNoSuggestions|textFilter</item>-->
+<!--        <item name="android:textStyle">normal</item>-->
+<!--        <item name="android:textCursorDrawable">@null</item>-->
+<!--        <item name="android:importantForAutofill" tools:targetApi="o">no</item>-->
+<!--    </style>-->
+
+
+    <!-- Remove white screen before splash -->
+    <style name="Theme.splash" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
+    </style>
+
+    <!-- Search view theme -->
+
+
+    <style name="simpletooltip_default" parent="@android:style/TextAppearance.Medium"/>
+
+
+    <!--Bottom sheet-->
+<!--    <style name="BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">-->
+<!--        <item-->
+<!--            name="android:background">@drawable/background_bottom_sheet-->
+<!--        </item>-->
+<!--    </style>-->
+
+<!--    <style name="BaseBottomSheetDialog"-->
+<!--        parent="@style/Theme.Design.Light.BottomSheetDialog">-->
+<!--        <item name="android:windowIsFloating">false</item>-->
+<!--        <item name="bottomSheetStyle">@style/BottomSheet</item>-->
+<!--    </style>-->
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/hintColor</item>
+        <item name="colorControlActivated">@color/ratting_bar_selected</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/skyBlue</item>
+        <item name="colorPrimaryDark">@color/lightSky</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Add these -->
+        <item name="materialCalendarStyle">@style/Widget.MaterialComponents.MaterialCalendar</item>
+        <item name="materialCalendarFullscreenTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen</item>
+        <item name="materialCalendarTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar</item>
+    </style>
+
+    <dimen name="margin_54">54dp</dimen>
+
+</resources>
