@@ -68,9 +68,25 @@
         android:layout_height="wrap_content"
         android:textColor="@color/blue"
         android:text="Units left: 700"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
         android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUpdate"
+        android:text="Update"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp"
+        android:layout_below="@id/tvUnitsLeft"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="25dp"
+        app:cornerRadius="10dp"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/white"
         tools:ignore="HardcodedText" />
 
 </RelativeLayout>

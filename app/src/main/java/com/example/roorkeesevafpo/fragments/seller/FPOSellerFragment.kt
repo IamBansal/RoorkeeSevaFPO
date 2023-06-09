@@ -15,13 +15,13 @@ import com.example.roorkeesevafpo.R.color.toolbarTextColor
 import com.example.roorkeesevafpo.adapters.SellerUserAdpater
 import com.example.roorkeesevafpo.databinding.FragmentFPOSellerBinding
 import com.example.roorkeesevafpo.db.ShoppingDatabase
-import com.example.roorkeesevafpo.model.local.Item
 import com.example.roorkeesevafpo.model.remote.buyer.DataBuyer
 import com.example.roorkeesevafpo.repository.ShoppingRepository
 import com.example.roorkeesevafpo.utils.Resource
 import com.example.roorkeesevafpo.viewmodel.ShoppingViewModel
 import com.example.roorkeesevafpo.viewmodel.ShoppingViewModelFactory
 
+@Suppress("DEPRECATION")
 class FPOSellerFragment : Fragment() {
 
     private lateinit var binding: FragmentFPOSellerBinding

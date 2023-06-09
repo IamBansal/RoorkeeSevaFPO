@@ -5,7 +5,6 @@ import android.view.ViewGroup
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.RecyclerView
-import com.example.roorkeesevafpo.model.local.Item
 import com.example.roorkeesevafpo.viewmodel.ShoppingViewModel
 import com.example.roorkeesevafpo.databinding.ListItemBinding
 import com.example.roorkeesevafpo.model.remote.DataProduct

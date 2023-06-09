@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.roorkeesevafpo.R
 import com.example.roorkeesevafpo.databinding.SellerListItemBinding
-import com.example.roorkeesevafpo.model.local.Item
 import com.example.roorkeesevafpo.model.remote.buyer.DataBuyer
 
 class SellerUserAdpater(private var list: List<DataBuyer>): RecyclerView.Adapter<SellerUserAdpater.ViewHolder>() {

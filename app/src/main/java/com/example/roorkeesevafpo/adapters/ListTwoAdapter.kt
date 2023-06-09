@@ -2,6 +2,7 @@ package com.example.roorkeesevafpo.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.roorkeesevafpo.databinding.ListTwoItemBinding
 import com.example.roorkeesevafpo.model.local.Item
@@ -15,6 +16,9 @@ class ListTwoAdapter(private var list: List<Item>): RecyclerView.Adapter<ListTwo
                 "Price(INR): ${item.price}".also { binding.tvPrice.text = it }
             }
             binding.image.setImageResource(item.image)
+            binding.btnUpdate.setOnClickListener {
+                Toast.makeText(binding.root.context, "Update accessed.", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
