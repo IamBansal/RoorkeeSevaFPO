@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.buyer.CartFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_marginHorizontal="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/icBack"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:text="Banana"
+                style="@style/styleFont20"
+                android:fontFamily="@font/calibri_bold"
+                android:maxLength="30"
+                android:textSize="26sp"
+                android:textColor="@color/toolbarTextColor"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_below="@id/toolbar"
+        app:dividerColor="@color/coolGrey"
+        android:layout_marginTop="7dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/divider"
+        android:id="@+id/rvItems"
+        android:layout_marginTop="10dp"
+        android:layout_above="@id/btnAddNew"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginHorizontal="20dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnAddNew"
+        android:backgroundTint="@color/skyBlue"
+        app:cornerRadius="10dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:text="Add New Category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
